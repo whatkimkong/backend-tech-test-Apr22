@@ -1,0 +1,9 @@
+/** START SERVER */
+const app = require("./app");
+
+// ℹ️ Sets the PORT for our app to have access to it.
+const PORT = process.env.PORT || 5005;
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port http://localhost:${PORT}`);
+});
