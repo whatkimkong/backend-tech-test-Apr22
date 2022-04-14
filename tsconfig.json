@@ -13,5 +13,6 @@
     /* Skip type checking all .d.ts files. */                     
     "skipLibCheck": true                                 
   },
+  // 👇 will only compile the src foler
   "include": ["src/**/*"]
 }
