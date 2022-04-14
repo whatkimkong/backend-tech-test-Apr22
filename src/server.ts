@@ -1,7 +1,7 @@
 /** START SERVER */
 const app = require("./app");
 
-// ℹ️ Sets the PORT for our app to have access to it.
+// 👇 App access to port:
 const PORT = process.env.PORT || 5005;
 
 app.listen(PORT, () => {
