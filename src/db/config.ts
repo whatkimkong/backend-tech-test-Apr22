@@ -1,6 +1,6 @@
 // ℹ️ package responsible to make the connection with mongodb
 
-import Log from "../middlewares/Log";
+import Log from "../error-handling/Log";
 
 // https://www.npmjs.com/package/mongoose
 const mongoose = require("mongoose");
@@ -17,6 +17,6 @@ mongoose
       `Connected to Mongo! Database name: "${x.connections[0].name}"`
     );
   })
-  .catch((err: any) => {
-    console.error("Error connecting to mongo: ", err);
+  .catch((error: any) => {
+    Log.error(error.message);
   });
