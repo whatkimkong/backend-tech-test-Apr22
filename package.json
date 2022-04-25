@@ -2,7 +2,7 @@
   "name": "ubio-challenge",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.ts",
+  "main": "server.ts",
   "scripts": {
     "build": "rm -rf build/ && tsc",
     "start": "node build/server.js",

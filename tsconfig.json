@@ -14,5 +14,5 @@
     "skipLibCheck": true                                 
   },
   // 👇 will only compile the src foler
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "app.ts", "server.ts", "seedScript.ts"]
 }

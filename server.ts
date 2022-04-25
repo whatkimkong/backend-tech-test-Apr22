@@ -1,4 +1,4 @@
-import Log from "./error-handling/Log";
+import Log from "./src/error-handling/Log";
 
 /** START SERVER */
 const app = require("./app");

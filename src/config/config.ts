@@ -1,3 +1,4 @@
+import { Request, Response, NextFunction } from 'express';
 const express = require("express");
 
 /** CORS - cross origin resource sharing 
@@ -46,10 +47,11 @@ module.exports = (app: any) => {
         },
       })
     );
-  
-    app.use((req: any, res: any, next: any) => {
-      req.user = req.session.user || null;
-      next();
-    });
   };
   
+
+/* no user so:
+no need for: app.use((req: Request, res: Response, next: NextFunction) => {
+      req.user = req.session.user || null;
+      next();
+    }); */
